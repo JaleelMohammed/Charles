@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products RedStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    
+        <div class="container">
+            <div class="nav-bar">
+                <nav>
+                    <ul class="side-bar">
+                        <li> <a onclick="showbar()" class="closebar">
+                                x
+                            </a></li>
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="Account.html">Account</a></li>
+
+                    </ul>
+                    <ul>
+                       <li><a href="index.html" > <img src="./images/mini-logo-white.jpg"
+                                     class="logo"></a></li>
+                     <li><a href="index.html" class="hide-mobile">Home</a></li>
+                        <li><a href="Products.html" class="hide-mobile">Products</a></li>
+                        <li><a href="" class="hide-mobile">About</a></li>
+                        <li><a href="" class="hide-mobile">Contact</a></li>
+                        <li><a href="Account.html" class="hide-mobile">Account</a></li>
+                        <li><a onclick="menubar()" class="menu"><img src="./images/menu.png" class="menu"
+                                    onclick="menubtn()"></a></li>
+                    </ul>
+                </nav>
+
+                <!-- <a href="Cart-items.html"><img src="./images/cart1.png" width="25px" height="25px"></a> -->
+
+            </div>
+
+
+        </div>
+    <!-- ---cart-items--- -->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub-Total</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/pr-1.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>$89.90</small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$89.90</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/p3-1.jpg">
+                        <div>
+                            <p>HRX Black Shoes</p>
+                            <small>$94.99</small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$94.99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/p4-1.jpg">
+                        <div>
+                            <p>Puma Sport-Pant
+                            </p>
+                            <small>$74.99</small> <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$74.99</td>
+            </tr>
+        </table>
+
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Sub-Total</td>
+                    <td>$259.90</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$40.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$299.88</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- -----FOOTER--- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png">
+                        <img src="./images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-sm.jpg">
+                    <p>Our Purpose Is To Sustainable Make the Pleasure and Benefits of sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright & Developed By <span>----</span></p>
+        </div>
+    </div>
+
+    <script>
+
+        let sidebar = document.querySelector('.side-bar');
+        function menubar() {
+            sidebar.style.display = "flex";
+
+        }
+        function showbar() {
+
+            sidebar.style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>
